@@ -1,0 +1,237 @@
+/* Base Styles */
+.home-blogs {
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0px;
+    /* border: 1px solid black; */
+}
+
+.o-b-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 20px;
+}
+
+.n-b-main-con {
+    display: grid;
+    grid-template-columns: 33% 65%;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.n-b-1st {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.n-b-1st:hover {
+    transform: translateY(-5px);
+}
+
+.n-b-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.n-b-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.n-b-image img:hover {
+    cursor: pointer;
+}
+
+.n-b-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.calendar-m-i {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 10px;
+    color: #777;
+}
+
+.n-b-date {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.n-b-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+    padding: 10px 10px 15px;
+}
+
+.n-b-2nd {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.n-b-2nd:hover {
+    transform: translateY(-5px);
+}
+
+.my-s-blog {
+    display: grid;
+    gap: 1rem;
+}
+
+.n-b-2nd-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.n-b-2nd-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.n-b-2nd-image img:hover {
+    cursor: pointer;
+}
+
+.n-b-2nd-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.n-b-2nd-date {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Responsiveness */
+
+/* Small Screens */
+@media (max-width: 767px) {
+    .o-b-header {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .n-b-main-con {
+        display: flex;
+        flex-direction: column;
+        /* Stack blogs vertically */
+        gap: 1rem;
+    }
+
+    .n-b-1st {
+        display: none;
+        /* Keep the first blog hidden */
+    }
+
+    .n-b-image,
+    .n-b-2nd-image {
+        height: auto;
+        /* Allow dynamic height */
+        max-height: 200px;
+        /* Set a maximum height */
+    }
+
+    .n-b-image img,
+    .n-b-2nd-image img {
+        width: 100%;
+        /* Ensure full width */
+        height: 100%;
+        /* Ensure full height */
+        object-fit: cover;
+        /* Maintain aspect ratio */
+        border-radius: 8px;
+        /* Optional: Add rounded corners */
+    }
+
+    .n-b-title {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .n-b-text {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 10px;
+    }
+
+    .n-b-2nd {
+        display: flex;
+        flex-direction: column;
+        /* Stack image and content vertically */
+    }
+
+    .n-b-2nd-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .o-b-header {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .n-b-main-con {
+        gap: 1rem;
+    }
+
+    .n-b-image,
+    .n-b-2nd-image {
+        height: auto;
+        /* Allow image height to adjust */
+        max-height: 180px;
+        /* Restrict maximum height */
+    }
+
+    .n-b-image img,
+    .n-b-2nd-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .my-s-blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .n-b-title {
+        font-size: 16px;
+    }
+
+    .n-b-text {
+        font-size: 13px;
+        padding: 10px;
+    }
+}

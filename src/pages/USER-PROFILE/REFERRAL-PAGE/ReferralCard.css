@@ -1,0 +1,126 @@
+/* Main page container */
+.referral-page {
+    display: flex;
+
+    background-color: #f4f4f4;
+}
+
+
+
+/* Referral card container */
+.referral-card {
+
+    margin: auto;
+    max-width: 400px;
+    /* Reduced width */
+    background-color: #ffffff;
+    padding: 25px;
+    /* Reduced padding */
+    border-radius: 8px;
+    /* Slightly reduced border radius */
+    text-align: center;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* Referral card content */
+.referral-card-content {
+    max-height: 100vh;
+    /* Prevent overlapping with footer */
+
+    /* Enable scrolling if content exceeds max height */
+}
+
+/* Title styling */
+.referral-title {
+    color: #000;
+    font-size: 1.3rem;
+    /* Reduced font size */
+    margin-bottom: 15px;
+}
+
+/* Description styling */
+.referral-description {
+    color: #333;
+    font-size: 1rem;
+    /* Reduced font size */
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* Banner image */
+.referral-banner img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Share via section */
+.share-via {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* Reduced font size */
+    margin-bottom: 10px;
+}
+
+/* Icons container */
+.referral-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Reduced gap */
+    margin-bottom: 20px;
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+    width: 30px;
+    /* Reduced size */
+    height: 30px;
+    /* Reduced size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.icon-wrapper:hover {
+    transform: scale(1.1);
+}
+
+/* Referral link */
+.referral-link {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.8rem;
+    /* Reduced font size */
+    word-break: break-word;
+    margin-bottom: 15px;
+}
+
+/* Copy button */
+.copy-button {
+    background-color: #d2042d;
+    /* Cherry red */
+    color: #fff;
+    padding: 10px 15px;
+    /* Reduced padding */
+    font-size: 0.8rem;
+    /* Reduced font size */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #a50321;
+    /* Darker red on hover */
+    transform: scale(1.1);
+}

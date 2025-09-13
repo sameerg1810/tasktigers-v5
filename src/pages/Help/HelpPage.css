@@ -1,0 +1,97 @@
+/* HelpPage.css */
+
+/* Center content and limit maximum width */
+.help-page-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    /* background-color: #fffaf5; */
+}
+
+/* Back button styling */
+.back-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Booking item and help topic styling */
+.booking-item,
+.help-topic-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* Arrow styling */
+.booking-arrow,
+.topic-arrow {
+    font-size: 1.5rem;
+    /* Adjust size to match the desired appearance */
+    color: #333;
+}
+
+/* Separator line styling */
+.separator-line {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Booking history link styling */
+.booking-history-link {
+    display: block;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.booking-history-link:hover {
+    text-decoration: underline;
+}
+
+/* Add padding and align text */
+.booking-info,
+.topic-name {
+    flex-grow: 1;
+}
+
+.booking-title {
+    font-weight: bold;
+}
+
+.booking-date {
+    color: #777;
+}
+
+/* HelpPage.css */
+
+/* Service Icon Styling */
+.service-icon {
+    width: 40px;
+    /* Adjust size as needed */
+    height: 40px;
+    margin-right: 10px;
+    /* Space between image and text */
+    border-radius: 5px;
+    /* Optional: Round the corners */
+    object-fit: cover;
+    /* Ensure the image fits within the specified dimensions */
+}

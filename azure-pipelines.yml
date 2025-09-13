@@ -1,0 +1,161 @@
+name: $(BuildDefinitionName)_$(date:yyyyMMdd)$(rev:.r)
+
+trigger:
+  branches:
+    include:
+      # - main
+      - develop
+
+pool:
+  vmImage: 'windows-latest'
+
+# pool:
+#   name: 'tt-devops-build'
+
+variables:
+  buildConfiguration: 'Release'
+  projectFolder: '.'  # Define the project folder if needed
+  buildOutputFolder: 'dist'  # This is the default for Vite
+
+stages:
+  # Build Stage
+  - stage: Build
+    displayName: "Build Stage"
+    jobs:
+      - job: BuildJob
+        displayName: "Build and Publish Frontend"
+        steps:
+          # Install Node.js
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '20.x'
+            displayName: 'Install Node.js'
+
+          # Install dependencies
+          - script: |
+              npm install
+            displayName: 'npm install'
+
+          # Build the frontend
+          - script: |
+              npm run build
+            displayName: 'Build Frontend'
+
+          # List the contents of the build output directory
+          - script: |
+              dir $(Build.SourcesDirectory)\$(buildOutputFolder)
+            displayName: 'List Build Output Directory'
+
+          # Copy the build output to the artifact staging directory
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: '$(Build.SourcesDirectory)/$(buildOutputFolder)'  # Copy from dist folder
+              Contents: '**/*'  # Copy everything from dist folder
+              TargetFolder: '$(Build.ArtifactStagingDirectory)'
+            displayName: 'Copy build output to artifact directory'
+
+          # Publish the build artifact
+          - task: PublishPipelineArtifact@1
+            inputs:
+              artifactName: 'frontendArtifact'
+              targetPath: '$(Build.ArtifactStagingDirectory)'
+              publishLocation: 'pipeline'
+            displayName: 'Publish Build Artifact'
+
+  # Development Stage
+  - stage: Dev
+    displayName: "Development Stage"
+    dependsOn: Build
+    jobs:
+      - job: DeployToDev
+        displayName: 'Deploy to Development Environment'
+        steps:
+          # Download the build artifact
+          - task: DownloadPipelineArtifact@2
+            inputs:
+              artifact: 'frontendArtifact'
+              path: '$(Build.ArtifactStagingDirectory)'
+            displayName: 'Download Build Artifacts'
+
+          # List contents of the downloaded artifacts (for debugging)
+          - script: |              
+              dir $(Build.ArtifactStagingDirectory)
+            displayName: 'List Downloaded Artifacts'
+
+          # Deploy to Azure App Service (Development)
+          - task: AzureWebApp@1
+            inputs:
+              azureSubscription: 'Tasktigers'
+              appType: 'webApp'
+              appName: 'appsvc-userweb-dev'
+              package: '$(Build.ArtifactStagingDirectory)'
+              deploymentMethod: 'zipDeploy'
+            displayName: 'Deploy to Azure App Service - Dev'
+
+  # UAT Stage
+  - stage: UAT
+    displayName: "UAT Stage"
+    dependsOn: Dev
+    jobs:
+      - deployment: DeployToUAT
+        displayName: 'Deploy to UAT Environment'
+        environment: 'UAT'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Download the build artifact
+                - task: DownloadPipelineArtifact@2
+                  inputs:
+                    artifact: 'frontendArtifact'
+                    path: '$(Build.ArtifactStagingDirectory)'
+                  displayName: 'Download Build Artifacts'
+      
+                # List contents of the downloaded artifacts (for debugging)
+                - script: |              
+                    dir $(Build.ArtifactStagingDirectory)
+                  displayName: 'List Downloaded Artifacts'
+      
+                # Deploy to Azure App Service (Development)
+                - task: AzureWebApp@1
+                  inputs:
+                    azureSubscription: 'Tasktigers'
+                    appType: 'webApp'
+                    appName: 'appsvc-userweb-uat'
+                    package: '$(Build.ArtifactStagingDirectory)'
+                    deploymentMethod: 'zipDeploy'
+                  displayName: 'Deploy to Azure App Service - uat'
+
+  # Production Stage
+  - stage: Prod
+    displayName: "Production Stage"
+    dependsOn: UAT
+    jobs:
+      - deployment: DeployToProd
+        displayName: 'Deploy to Production Environment'
+        environment: 'Production'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Download the build artifact
+                - task: DownloadPipelineArtifact@2
+                  inputs:
+                    artifact: 'frontendArtifact'
+                    path: '$(Build.ArtifactStagingDirectory)'
+                  displayName: 'Download Build Artifacts'
+      
+                # List contents of the downloaded artifacts (for debugging)
+                - script: |              
+                    dir $(Build.ArtifactStagingDirectory)
+                  displayName: 'List Downloaded Artifacts'
+      
+                # Deploy to Azure App Service (Development)
+                - task: AzureWebApp@1
+                  inputs:
+                    azureSubscription: 'Tasktigers'
+                    appType: 'webApp'
+                    appName: 'appsvc-userweb-prod'
+                    package: '$(Build.ArtifactStagingDirectory)'
+                    deploymentMethod: 'zipDeploy'
+                  displayName: 'Deploy to Azure App Service - prod'

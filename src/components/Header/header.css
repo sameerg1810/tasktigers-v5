@@ -1,0 +1,660 @@
+/* new stylings for header */
+
+.new-main-h {
+  height: 4rem;
+  margin: 1rem 3rem;
+  border-radius: 10px;
+  padding: 0rem 3rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-h-logo {
+  /* border: 1px solid green; */
+  width: 15rem;
+  height: 3.5rem;
+
+}
+
+.new-h-logo:hover {
+  cursor: pointer;
+}
+
+.new-h-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.location-search {
+  width: 15rem;
+  height: 2.5rem;
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 60% 20%;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0rem 0.5rem;
+}
+
+.location-search img {
+  width: 2rem;
+  height: 2.5rem;
+  color: white;
+  /* border: 1px solid green; */
+}
+
+.handlecity-name {
+  font-family: poppins;
+  font-size: 18.33px;
+  font-weight: 400;
+  line-height: 17.96px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.location-search:hover {
+  cursor: pointer;
+}
+
+.profile-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.profile-cart-icons {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.profile-cart-icons:hover {
+  cursor: pointer;
+}
+
+.cart-icon-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-items {
+  position: absolute;
+  top: -10px;
+  /* Adjust as needed */
+  right: -15px;
+  /* Adjust as needed */
+  background-color: #ffa226;
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  border-radius: 5%;
+  /* Ensures a circular badge */
+  display: flex;
+  /* Enables flexbox */
+  align-items: center;
+  /* Vertically centers content */
+  justify-content: center;
+  /* Horizontally centers content */
+  height: 1.4rem;
+  /* Adjust height for fit */
+  width: 1.4rem;
+  /* Matches height for a perfect circle */
+  border: 0.8px solid white;
+  /* Optional border for contrast */
+}
+
+.badge-text {
+  margin: 0;
+  /* Removes extra margin */
+  padding: 0;
+  /* Removes extra padding */
+  line-height: 1;
+  /* Ensures text height alignment */
+  text-align: center;
+  /* Ensures content alignment in older browsers */
+}
+
+
+
+
+.close-icon {
+  color: black;
+}
+
+.closeicon :hover {
+  cursor: pointer;
+}
+
+
+
+
+.mobile-header {
+  display: none;
+}
+
+.google-main-con {
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 90px;
+  left: 90px;
+  width: 40%;
+  background-color: white;
+  color: black;
+  z-index: 1001;
+  overflow: visible;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: height 0.3s ease;
+  /* Smooth transition for height change */
+  height: 11rem;
+  /* Default height */
+  border-radius: 10px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.google-main-con h3 {
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  padding: 10px;
+}
+
+.google-main-con h3 span {
+  color: #FFA226;
+}
+
+.google-main-con p {
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px 10px;
+}
+
+.location-con-detect-search {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 0rem 0;
+  color: black;
+  padding: 0rem 2rem;
+}
+
+.map-logo {
+  width: 8rem;
+  height: 3rem;
+}
+
+.map-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.location-detect-map {
+  display: flex;
+  width: 95%;
+  margin: 1rem auto;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detect-location h2 {
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(38, 126, 62);
+  /* border: 1px solid black; */
+  color: white;
+  text-align: center;
+  /* Centers the text */
+  cursor: pointer;
+  /* Indicates interactivity */
+  transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Classic hover effect */
+.detect-location h2:hover {
+
+  box-shadow: 0px 4px 8px rgb(248, 244, 244);
+  /* Adds a soft shadow */
+}
+
+
+
+
+/* Style for the input field */
+.google-autocomplete-input {
+  width: 90%;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  z-index: 999;
+  /* Make sure the input stays on top */
+  padding: 10px;
+}
+
+/* Add focus effect for the input */
+.google-autocomplete-input:focus {
+  border: 1px solid black;
+}
+
+/* Add hover effect */
+.google-autocomplete-input:hover {
+  border: 1px solid black;
+}
+
+/* Ensure the autocomplete dropdown is visible */
+.pac-container {
+  z-index: 10000 !important;
+  /* Ensures the dropdown appears above other elements */
+  max-height: 300px;
+  width: 600px;
+  overflow-y: auto;
+}
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.new-search-header {
+  display: flex;
+  align-items: center;
+  /* Aligns items horizontally */
+  gap: 8px;
+  /* Space between icon and text */
+  cursor: pointer;
+}
+
+.new-search-header p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  font-family: Poppins, sans-serif;
+  line-height: 1;
+}
+
+
+@media (min-width: 360px) and (max-width: 600px) {
+
+  /* new stylings for header */
+
+  .new-main-h {
+    height: 4rem;
+    margin: 0.5rem 0rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .new-h-logo {
+    /* border: 1px solid green; */
+    width: 15rem;
+    height: 3.5rem;
+    display: none;
+
+  }
+
+
+  .new-h-logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .location-search {
+    width: 12rem;
+    grid-template-columns: 10% 60% 10%;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .handlecity-name {
+    font-size: 13.33px;
+    font-weight: 400;
+    line-height: 15.96px;
+  }
+
+  .new-service {
+    display: none;
+  }
+
+  .location-search:hover {
+    cursor: pointer;
+  }
+
+  .profile-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .profile-cart-icons {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .cart-icon-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .total-items {
+    position: absolute;
+    top: -10px;
+    /* Adjust this value for vertical positioning */
+    right: -15px;
+    /* Adjust this value for horizontal positioning */
+    background-color: #FFA226;
+    /* Badge background color */
+    color: white;
+    /* Badge text color */
+    font-size: 14px;
+    /* Badge text size */
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    /* Makes the text bold */
+
+    border-radius: 5%;
+    /* Makes the badge circular */
+    display: flex;
+    align-items: center;
+    /* Centers content vertically */
+    justify-content: center;
+    /* Centers content horizontally */
+    height: 1.5rem;
+    /* Increased for better text fit */
+    width: 1.5rem;
+    /* Matches height to make it circular */
+    border: 0.8px solid white;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+
+  .google-main-con {
+    position: absolute;
+    bottom: -100%;
+    /* Initially hidden */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 320px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: bottom 0.5s ease;
+    /* border: 1px solid black; */
+    min-height: 10rem;
+  }
+
+  .google-main-con.active {
+    bottom: 50%;
+    /* Bring it to the middle */
+    transform: translate(-50%, 50%);
+  }
+
+  .location-con-detect-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0rem 0;
+    color: black;
+    padding: 0rem 2rem;
+  }
+
+  .detect-location h2 {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(38, 126, 62);
+    /* border: 1px solid black; */
+    color: white;
+    text-align: center;
+    /* Centers the text */
+    cursor: pointer;
+    /* Indicates interactivity */
+    transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .google-main-con h3 {
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .google-main-con h3 span {
+    color: #FFA226;
+  }
+
+  .google-main-con p {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px 10px;
+  }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .google-main-con {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners at the top */
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 0px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-button:hover {
+  color: black;
+}
+
+/* Badge Styling */
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+
+/* mapbox css */
+.google-autocomplete-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loading-indicator {
+  padding: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+.results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.result-item:hover {
+  background-color: #f0f0f0;
+}
+
+.styled-item {
+  font-size: 14px;
+  color: #333;
+}
+
+.results-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.result-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* spinner */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(185, 168, 168, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-overlay img {
+  width: 150px; /* Adjust the width */
+  height: 150px; /* Adjust the height */
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}

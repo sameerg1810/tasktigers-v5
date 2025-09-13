@@ -1,0 +1,131 @@
+.contactus{
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 2rem auto;
+}
+.g-i-t{
+    font-family: Poppins;
+    font-size: 46.62px;
+    font-weight: 600;
+    line-height: 55.93px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color:rgba(248, 128, 53, 1);
+
+}
+.g-i-t-sub{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+.g-i-t-form{
+    margin-bottom: 5rem;
+}
+.name-number{
+    display: flex;
+    column-gap: 2rem;
+}
+.g-i-t span{
+    font-family: Poppins;
+    font-size: 46.62px;
+    font-weight: 600;
+    line-height: 55.93px;
+    text-align: left;
+    color:rgba(248, 128, 53, 1);
+}
+.submit-button{
+    margin-bottom: 5rem;
+    float: right;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgba(248, 128, 53, 1);
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 20.62px;
+    font-weight: 600;
+    line-height: 25.93px;
+    text-align: center;
+    color: white;
+}
+.submit-button:hover{
+    cursor: pointer;
+}
+/* Ensure the input field border stays black when focused */
+.input-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: black; /* Set the border color to black */
+  }
+  
+  /* Change the label color when focused */
+  .input-field .MuiInputLabel-root.Mui-focused {
+    color: black; /* Set the label color to black */
+  }
+  
+  
+
+  @media (min-width: 360px) and (max-width: 810px){
+    .contactus{
+        /* border: 1px solid black; */
+        width: 95%;
+        margin: 2rem auto;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .g-i-t{
+        font-family: Poppins;
+        font-size: 35.62px;
+        font-weight: 600;
+        line-height: 45.93px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        color:rgba(248, 128, 53, 1);
+    
+    }
+    .g-i-t-sub{
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+    .g-i-t-form{
+        margin-bottom: 5rem;
+    }
+    .name-number{
+        display: flex;
+        column-gap: 1rem;
+    }
+    .submit-button{
+        margin-bottom: 5rem;
+        float: center;
+        margin: auto;
+        width: 15rem;
+        height: 3rem;
+        background-color: rgba(248, 128, 53, 1);
+        border: none;
+        border-radius: 10px;
+        font-family: Poppins;
+        font-size: 20.62px;
+        font-weight: 600;
+        line-height: 25.93px;
+        text-align: center;
+        color: white;
+    }
+
+
+      
+  }

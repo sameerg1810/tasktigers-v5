@@ -1,0 +1,185 @@
+.how-it-works-main-con {
+    min-height: 10rem;
+    /* border: 1px solid black; */
+    margin: 3rem 0rem;
+
+}
+.h-i-w-headding h2{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0px;
+
+}
+.h-i-w-headding p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 5px;
+
+}
+.h-i-w-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+    position: relative;
+   
+ 
+}
+.dashedline{
+    position: absolute;
+    top: 50;
+    left: 150px;
+
+}
+.h-i-w-sub-con {
+    width: 14rem;
+    min-height: 18rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 40% 10% 50%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for shadow and scale */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Default subtle shadow */
+}
+
+.h-i-w-sub-con:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+.h-i-w-p{
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+   
+    align-items: flex-start;
+}
+.h-i-w-p p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 5px;
+}
+
+.h-i-w-sub-con img{
+    width: 7rem;
+    height: 7rem;
+    /* border: 1px solid black; */
+}
+.h-i-w-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.h-i-w-sub-con h1{
+    font-family: Poppins;
+    font-size: 18.15px;
+    font-weight: 500;
+    line-height: 27.23px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0px;
+
+}
+
+
+
+
+
+@media (min-width: 360px) and (max-width: 600px){
+    .how-it-works-main-con {
+        min-height: 10rem;
+        /* border: 1px solid black; */
+        margin: 1rem 0rem;
+    
+    }
+    .h-i-w-headding h2{
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 0px;
+    
+    }
+    .h-i-w-headding p{
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 23.4px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 5px;
+    
+    }
+    .h-i-w-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0rem;
+        position: relative;
+        gap: 1rem;
+       
+     
+    }
+    .dashedline{
+        position: absolute;
+        top: 50;
+        left: 150px;
+    
+    }
+    .h-i-w-sub-con{
+        width: 14rem;
+        min-height: 8rem;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .h-i-w-sub-con img{
+        width: 7rem;
+        height: 7rem;
+        /* border: 1px solid black; */
+    }
+    .h-i-w-sub-con h1{
+        font-family: Poppins;
+        font-size: 18.15px;
+        font-weight: 500;
+        line-height: 27.23px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 0px;
+    
+    }
+    .h-i-w-sub-con p{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 19.1px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 5px;
+    
+    }
+}

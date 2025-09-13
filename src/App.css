@@ -1,0 +1,20 @@
+#root {
+  margin: 0px important;
+  padding: 0px important;
+  text-align: left;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+@media (min-width: 1500px) and (max-width: 2000px) {
+  #root{
+   width: 1500px;
+   margin: 0 auto;
+   /* border: 1px solid black; */
+  }
+}
+@media (min-width: 360px) and (max-width: 600px) {
+      #root{
+        /* border: 1px solid black; */
+        padding-bottom: 30px;
+      }
+} 

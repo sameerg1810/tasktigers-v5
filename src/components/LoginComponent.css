@@ -1,0 +1,345 @@
+/* Base styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    padding: 10px;
+    /* Adjusted padding */
+    /* border:1px solid white; */
+}
+
+/* Input field styles */
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: transparent;
+}
+
+input:focus {
+    border-color: rgb(0, 0, 0);
+}
+
+/* Login box styling */
+.login-box {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+   
+
+  
+    /* Slightly move to the left */
+}
+
+/* Header styling */
+.login-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -1px;
+    position: relative;
+    max-width: 18rem;
+    padding: 0;
+   
+}
+
+.login-box-header h4 {
+    margin-left: 0.95rem;
+    color: white;
+    font-family: Poppins;
+    font-size: 20.48px;
+    font-weight: 400;
+    line-height: 42.72px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0px;
+
+}
+
+.coolie-logo {
+    width: 12.5rem;
+    margin: 1px;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Input group */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-size: 15.36px;
+    font-weight: 400;
+    line-height: 36.54px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background-color: #333333;
+    border: 1px solid white;
+    color: white;
+}
+
+.input-group button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: none;
+    color: #808080;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Button styles */
+.login-button,
+.send-otp-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    font-weight: bold;
+    height: 2.5rem;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.otpnotify{
+    color: white;
+}
+/* Social login */
+.social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.oval-shaped-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.google-login-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.google-logo {
+    width: 30px;
+    margin-top: 0.1rem;
+}
+
+/* Link styles */
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Hide the spinner controls for number input */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* otp box css */
+
+.otp-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .otp-box {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .otp-box:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  .login-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: black;
+  }
+  .resend-otp-button{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  .resend-otp-button:hover{
+    background-color: black;
+  }
+  .timer-message{
+    font-family: Poppins;
+    font-size: 15.36px;
+    font-weight: 400;
+    line-height: 36.54px;
+    text-align: center;
+    color: white;
+  }
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .login-box {
+        max-width: 250px;
+        /* Further reduce width for smaller screens */
+        padding: 15px;
+        /* Reduce padding for smaller screens */
+        margin-left: 1px;
+        /* Slightly move to the left */
+    }
+
+    .coolie-logo {
+        width: 89%;
+        /* Adjust logo size */
+    }
+
+    .login-button,
+    .send-otp-button {
+        width: 100%;
+        /* Full width for buttons on mobile */
+        padding: 5px 15px;
+        /* Adjust padding for smaller buttons */
+    }
+
+    .input-group input {
+        width: calc(100% - 30px);
+        /* Adjust input width */
+        padding: 8px 5px;
+        /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        max-width: 220px;
+        /* Further reduce width for extra small screens */
+        padding: 0px;
+        /* Reduce padding for smaller screens */
+        margin-left: -2px;
+        /* Adjust for better centering */
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+        /* Adjust heading size */
+    }
+
+    .coolie-logo {
+        width: 89%;
+        /* Adjust logo size */
+    }
+
+    .input-group input {
+        padding: 8px 5px;
+        /* Adjust padding */
+    }
+}
+
+
+/* Surface Duo specific styling for 540px width */
+@media (max-width: 375px) {
+
+    /* Adjustments for Surface Duo (one screen) */
+    .login-box {
+        max-width: 300px;
+        /* Adjust width to better fit one screen */
+        margin-right: -5px;
+        /* Center the login box */
+        padding: 10px;
+        /* Slightly reduce padding for better spacing */
+    }
+
+    .coolie-logo {
+        width: 80%;
+        /* Adjust logo size for smaller screen */
+    }
+
+    .login-button,
+    .send-otp-button {
+        width: 90%;
+        /* Slightly reduce button width for better fit */
+        padding: 5px 20px;
+        /* Adjust padding to maintain spacing */
+    }
+
+    .input-group input {
+        width: calc(100% - 35px);
+        /* Adjust input width to match the smaller screen */
+    }
+
+    .login-box h2 {
+        font-size: 22px;
+        /* Slightly reduce the font size for the header */
+    }
+
+    .input-group button {
+        padding: 10px;
+        /* Maintain consistent button size */
+    }
+}

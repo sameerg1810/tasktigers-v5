@@ -1,0 +1,271 @@
+.booking-details-container {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.booking-button-group {
+    display: flex;
+    gap: 10px;
+    /* Space between the buttons */
+    justify-content: flex-end;
+    /* Push buttons to the right */
+}
+
+.pdf-button,
+.help-button {
+    background-color: #ff9800;
+    /* Orange background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover,
+.help-button:hover {
+    background-color: #e68900;
+    /* Darker orange on hover */
+}
+
+.download-icon {
+    margin-right: 8px;
+    /* Space between icon and text */
+    font-size: 18px;
+}
+
+
+.booking-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#booking-detail-location {
+    display: flex;
+    justify-content: start;
+}
+
+.help-button {
+    padding: 10px 20px;
+    background-color: #bcbcbc;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.booking-time {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.customer-details {
+    margin-top: 20px;
+}
+
+.customer-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+}
+
+.location-card {
+    border: 1px solid #303030;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.location-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.location-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.job-timings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.job-timings p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.summary-section {
+    margin-top: 30px;
+}
+
+.summary-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 5px 0;
+}
+
+.summary-container {
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.item-description p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.booking-item-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.payment-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 10px 0;
+}
+
+.other-charges,
+.total-value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+    padding: 10px 0;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.total-value {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.other-charges p,
+.total-value p,
+.payment-details p {
+    margin: 0;
+}
+
+.dashed-line {
+    border-top: 1px dashed #ddd;
+    margin: 10px 0;
+}
+
+
+.pdf-button {
+    background-color: #ddd;
+    /* Orange background color */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: #e68900;
+    /* Darker orange on hover */
+}
+
+.download-icon {
+    /* Space between icon and text */
+    font-size: 18px;
+}
+
+
+
+/* NEW CSS */
+
+.booking-details-main-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-details-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .invoice-section {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-section h2 {
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+    padding-bottom: 5px;
+  }
+  
+  .download-btn {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .download-btn:hover {
+    background-color: #ff6700;
+  }
+  
+  strong {
+    color: #333;
+  }
+  

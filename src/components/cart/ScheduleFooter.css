@@ -1,0 +1,51 @@
+.schedule-total {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* Adjust the gap between columns */
+}
+
+.schedule-total-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.schedule-total-info h5 {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.schedule-total-info p {
+    margin-top: 0.3rem;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+.schedule-total-button {
+    display: flex;
+    justify-content: start;
+}
+
+.proceed-to-checkout-btn {
+    /* background-color: black; */
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    /* Button takes 100% of the column width */
+}
+
+.proceed-to-checkout-btn:hover {
+    background-color:black;
+}

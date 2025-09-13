@@ -1,0 +1,257 @@
+.cart-summary {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+  
+}
+
+/* sameer made changes */
+.cart-steps-container {
+    padding: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: large;
+    /* border: 1px solid black; */
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-between;
+
+}
+
+.cart-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    color: rgba(0, 128, 0, 0.5);
+    width: 70px;
+    /* Set a fixed width for each step */
+}
+
+.step img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    position: relative;
+}
+
+.step .tick-icon {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: green;
+    font-size: 14px;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.step span {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+.step.active {
+    color:black;
+}
+
+.step.completed img,
+.step:not(.active) img {
+    opacity: 1;
+}
+
+.step.completed,
+.step:not(.active) {
+    color: #CF0909;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    background-color: white;
+    color: #CF0909;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 50%;
+    padding: 2px 6.5px;
+    font-size: 10px;
+}
+
+.arrow-icon {
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.cart-package-con{
+    /* border: 1px solid black; */
+    min-height: 10rem;
+}
+.cart-package-con img{
+    width: 100%;
+    height: 100%;
+}
+.cart-package-con img:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 1320px) and (max-width: 1560px) {
+    .cart-summary {
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.step-text {
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+.active-text {
+    color:
+        black;
+    /* Red color for active steps */
+}
+
+.inactive-text {
+    color: black;
+    /* Black color for inactive steps */
+}
+
+.completed-text {
+    color: black;
+    /* Black color for completed steps */
+}
+
+
+@media (min-width: 360px) and (max-width: 600px) {
+    .cart-summary {
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+      
+    }
+    
+    /* sameer made changes */
+    .cart-steps-container {
+        width: 95%;
+        padding: 0px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: large;
+        /* border: 1px solid black; */
+        margin: 0rem auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    
+    }
+    
+    .cart-steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        position: relative;
+        color: rgba(0, 128, 0, 0.5);
+        width: 70px;
+        /* Set a fixed width for each step */
+    }
+    
+    .step img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+        background-color: transparent;
+        position: relative;
+    }
+    
+    .step .tick-icon {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        color: green;
+        font-size: 14px;
+        z-index: 2;
+        opacity: 0.8;
+    }
+    
+    .step span {
+        margin-top: 5px;
+        display: block;
+        text-align: center;
+    }
+    
+    .step.active {
+        color:black;
+    }
+    
+    .step.completed img,
+    .step:not(.active) img {
+        opacity: 1;
+    }
+    
+    .step.completed,
+    .step:not(.active) {
+        color: #CF0909;
+    }
+    
+    .badge {
+        position: absolute;
+        top: -10px;
+        right: 5px;
+        background-color: white;
+        color: #CF0909;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        border-radius: 50%;
+        padding: 2px 6.5px;
+        font-size: 10px;
+    }
+    
+    .arrow-icon {
+        width: 15px;
+        height: 15px;
+        opacity: 0.5;
+    }
+    
+  
+    
+    .full-width {
+        width: 100%;
+    }
+    .modalOverlay {
+        border: 30px solid white;
+        background-size: cover; /* Ensures the image covers the element */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center center; /* Centers the image */
+        height: 100vh; /* Example: Full viewport height */
+        width: 100%; /* Full width */
+    }
+}

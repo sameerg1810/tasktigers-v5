@@ -1,0 +1,315 @@
+/* Container styling */
+.worker-info-container {
+    /* border: 1px solid black; */
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Light orange background */
+}
+
+
+/* Worker info section */
+.worker-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.call-message{
+    display: flex;
+}
+.worker-image-container {
+    margin-right: 15px;
+}
+
+.worker-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    /* Tiger orange border */
+}
+
+.worker-details {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.worker-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: black;
+    /* Tiger orange */
+}
+
+.worker-contact,
+.worker-gender,
+.worker-email,
+.worker-dob {
+    font-size: 1em;
+    color: #555;
+}
+
+/* OTP and Actions section */
+.otp-and-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+@media (min-width: 768px) {
+    .otp-and-actions {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+}
+
+.otp-container {
+    width: 100%;
+    margin-left: -2rem;
+    margin-bottom: 20px;
+}
+
+/* Actions */
+.worker-actions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .worker-actions {
+        justify-content: flex-end;
+    }
+}
+
+.icon-button {
+    border: 2px solid black;
+    /* Tiger orange */
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    background-color: #ff8c00;
+    /* Tiger orange on hover */
+    color: white;
+}
+
+.icon-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.cancel-button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    /* Deep orange-red */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-button:hover {
+    /* Darker red */
+    transform: scale(1.05);
+}
+
+
+.otp-container {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ffe5b4;
+    /* Light tiger orange */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Typography Styling for Titles */
+.otp-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ff8c00;
+    /* Tiger orange */
+    margin-bottom: 5px;
+}
+
+.otp-message {
+    font-size: 1em;
+    color: #333;
+    /* Neutral text color */
+    margin-bottom: 15px;
+}
+
+/* OTP Input Fields Styling */
+.otp-digits {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.otp-digit {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+    /* White background */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Copy Button Styling */
+.copy-otp-button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    /* Tiger orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+}
+
+.copy-otp-button:hover {
+    background-color: #e57c00;
+    /* Darker tiger orange for hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .otp-container {
+        padding: 15px;
+    }
+
+    .otp-digit {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .copy-otp-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+/* Message Popup Overlay */
+.message-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Message Popup Container */
+.message-popup {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Popup Header */
+.message-popup-header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-popup-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.close-message-popup {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Popup Body */
+.message-popup-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+
+
+/* responsive */
+
+@media (min-width: 360px) and (max-width: 600px){
+    /* Container styling */
+        .worker-info-container {
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            row-gap: 1rem;
+            /* Light orange background */
+        }
+}

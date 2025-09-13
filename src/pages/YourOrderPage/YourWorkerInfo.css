@@ -1,0 +1,386 @@
+/* Container styling */
+.worker-info-container {
+    display: flex;
+   flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    min-height: 15rem;
+    /* Light orange background */
+    /* border: 1px solid black; */
+    row-gap: 1rem;
+    background-color: rgba(217, 217, 217, 0.22);
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .worker-info-container {
+        
+        justify-content: space-between;
+    }
+}
+
+/* Worker info section */
+.worker-info {
+    display: flex;
+    justify-content: left;
+    column-gap: 1rem;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.22);
+}
+
+.worker-image-container {
+    margin-right: 15px;
+    width: 5rem;
+    height: 5rem;
+}
+
+.worker-image {
+    width: 100%;
+    height: 100%;
+       /* Tiger orange border */
+}
+
+.worker-details {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.worker-name {
+    font-family: Poppins;
+    font-size: 19.21px;
+    font-weight: 400;
+    line-height: 20.05px;
+    text-align: center;
+    /* Tiger orange */
+}
+
+.worker-contact,
+.worker-gender,
+.worker-email,
+.worker-dob {
+    font-size: 1em;
+    color: #555;
+}
+
+/* OTP and Actions section */
+.otp-and-actionss {
+    width: 100%;
+  
+    /* border: 1px solid black; */
+    height: 10rem;
+
+}
+
+
+
+
+/* Actions */
+.worker-actions {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+
+
+.icon-button {
+    border: 2px solid #ff8c00;
+    /* Tiger orange */
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    background-color: #ff8c00;
+    /* Tiger orange on hover */
+    color: white;
+}
+
+.icon-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.cancel-button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color: black;
+    /* Deep orange-red */
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-button:hover {
+    background-color: white;
+    color: black;
+    /* Darker red */
+    transform: scale(1.05);
+}
+
+/* Responsive styling for mobile */
+
+
+
+.otp-containers {
+    width: 100%;
+    border-radius: 10px;
+    /* Light tiger orange */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* Subtle shadow for depth */
+    height: 10rem;
+    /* border: 1px solid black; */
+}
+
+/* Typography Styling for Titles */
+.otp-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ff8c00;
+    /* Tiger orange */
+    margin-bottom: 5px;
+}
+
+.otp-message {
+    font-size: 1em;
+    color: #333;
+    /* Neutral text color */
+    margin-bottom: 15px;
+}
+
+/* OTP Input Fields Styling */
+.otp-digits {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.otp-digit {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+    /* White background */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Copy Button Styling */
+.copy-otp-button {
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    /* Tiger orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Slight shadow for depth */
+}
+
+.copy-otp-button:hover {
+    background-color: #e57c00;
+    /* Darker tiger orange for hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    
+
+    .otp-digit {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .copy-otp-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+
+/* Message Popup Overlay */
+.message-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Message Popup Container */
+.message-popup {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Popup Header */
+.message-popup-header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-popup-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.close-message-popup {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Popup Body */
+.message-popup-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+
+
+/* otp css */
+/* General styles */
+
+  
+  .job-starts {
+    display: block; /* Show only if jobCompleteOtp is false */
+   height: auto;
+    /* border: 1px solid black; */
+  }
+  
+  .job-completion {
+    display: block; /* Show only if jobCompleteOtp is true */
+    /* background-color: #fdecea; */
+  }
+  
+  .otp-box {
+    width: 100%;
+    padding: 0px;
+    border-radius: 8px;
+    /* border: 4px solid orange; */
+  }
+  
+  .otp-title {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .job-start .otp-title {
+    color: #ff8c00;
+  }
+  
+  .job-completion .otp-title {
+    color: #d32f2f;
+  }
+  
+  .otp-descriptions {
+    color: #666;
+    font-size: 10px;
+    margin: 8px 0 16px;
+    font-family: Poppins;
+    font-size: 19.21px;
+    font-weight: 400;
+    line-height: 20.05px;
+    text-align: center;
+
+
+  }
+  .otp-descriptions span{
+    color: black;
+    font-family: Poppins;
+    font-size: 20.06px;
+    font-weight: 700;
+    line-height: 40.05px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0px;
+  }
+  
+  .otp-input {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    font-size: 28px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #D16611;
+    color: white;
+  }
+  
+  .otp-button {
+    margin-top: 16px;
+    padding: 10px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .start {
+    background-color: #ff8c00;
+  }
+  
+  .completion {
+    background-color: #d32f2f;
+  }
+  

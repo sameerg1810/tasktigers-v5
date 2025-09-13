@@ -1,0 +1,228 @@
+.custom-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card Styling for Notifications */
+.notification-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Depth effect */
+    animation: slideIn 0.6s ease-in-out;
+    /* Smooth slide-in animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
+}
+
+.notification-card:hover {
+    transform: translateY(-10px);
+    /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 128, 0, 0.4);
+    /* Greenish hover shadow */
+}
+
+/* Card Content */
+.notification-card .MuiListItem-root {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.notification-card .MuiAvatar-root {
+    background-color: #ff8c00;
+    width: 56px;
+    height: 56px;
+}
+
+.notification-card .MuiListItemText-root {
+    color: #fff;
+}
+
+.notification-card .MuiTypography-root {
+    color: #ffffff;
+    /* White text */
+}
+
+.notification-card .MuiIconButton-root {
+    color: #fff;
+}
+
+.notification-card .MuiIconButton-root:hover {
+    color: #ff8c00;
+    /* Icon hover effect */
+}
+
+/* Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.pagination-container .MuiPagination-root {
+    color: #ff8c00;
+}
+
+/* React DatePicker Styling */
+.custom-datepicker-container {
+    position: relative;
+    max-height: 500px;
+    /* Adjust the max height */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #888 #f1f1f1;
+
+    /* For Firefox */
+}
+
+.custom-datepicker-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* Black transparent background */
+    z-index: -1;
+    /* Ensure the pseudo-element stays behind the content */
+    opacity: 0.8;
+    /* Adjust transparency */
+}
+
+.custom-datepicker {
+    position: relative;
+    z-index: 1;
+    /* Keep the datepicker above the blurred background */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #2e7d32;
+    border-radius: 8px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark semi-transparent background */
+    color: #ffffff;
+    /* White text for better contrast */
+    backdrop-filter: blur(10px);
+    /* Glass effect */
+    /* 3D shadow effect */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-datepicker:focus {
+    outline: none;
+    border-color: #1b5e20;
+    box-shadow: 0 6px 20px rgba(0, 128, 0, 0.6);
+    /* Enhanced shadow effect */
+}
+
+.react-datepicker {
+    font-family: "Poppins", sans-serif;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark semi-transparent background */
+    color: #ffffff;
+    /* White text for better contrast */
+    backdrop-filter: blur(12px);
+    /* Glass effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* 3D shadow effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle border */
+    z-index: 1;
+    /* Keep above the pseudo-element */
+    max-height: 300px;
+    /* Limit height for scrolling */
+    overflow-y: auto;
+    /* Enable scrolling for content */
+}
+
+.react-datepicker::-webkit-scrollbar {
+    width: 8px;
+    background: #f1f1f1;
+    /* Scrollbar background */
+}
+
+.react-datepicker::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Scrollbar thumb */
+    border-radius: 10px;
+}
+
+.react-datepicker::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Thumb hover effect */
+}
+
+.react-datepicker__header {
+    background-color: rgba(0, 128, 0, 0.8);
+    /* Slightly transparent green */
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle border */
+    backdrop-filter: blur(5px);
+    /* Subtle blur */
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+    background-color: rgba(46, 125, 50, 0.9);
+    /* Green glass effect */
+    color: white;
+    border-radius: 50%;
+    /* Circular highlight */
+    box-shadow: 0 2px 6px rgba(46, 125, 50, 0.6);
+    /* 3D shadow effect */
+}
+
+.react-datepicker__day:hover {
+    background-color: rgba(46, 125, 50, 0.7);
+    /* Hover effect with transparency */
+    box-shadow: 0 2px 6px rgba(46, 125, 50, 0.4);
+    /* Subtle shadow on hover */
+}
+
+/* Smooth slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.custom-datepicker {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    /* Set input text color to white */
+    border: 1px solid #ff8c00;
+    /* Optional: Add a border for better visibility */
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.custom-datepicker::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    /* Set placeholder text color */
+}
+
+.custom-datepicker:focus {
+    outline: none;
+    border-color: #ff8c00;
+    /* Highlight border on focus */
+    box-shadow: 0 0 5px #ff8c00;
+}

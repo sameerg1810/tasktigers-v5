@@ -1,0 +1,122 @@
+/* completed orders */
+.com-orders-main-con{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    margin: 0rem auto;
+}
+.order-card{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border: 1px solid black;
+}
+.service-name{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px;
+    text-align: left;
+}
+.order-card{
+    margin: 2rem auto;
+}
+.order-card p{
+    margin: 0px;
+}
+.order-card h3{
+    font-family: Poppins;
+    font-weight: 450;
+    font-size: 18px;
+    margin: 0px;
+    text-align: left;
+    color: gray;
+}
+.button-container {
+    display: flex;
+    column-gap: 0.2rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  
+  .custom-button {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .custom-button:hover {
+    background-color: #333; /* Slightly lighter black for hover effect */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  /* orders.css */
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .order-card .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .custom-button {
+    margin: 5px;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  .notify-order{
+    font-family: poppins;
+    font-size: 10px;
+  }
+
+  .special-button{
+    width: auto;
+    height: 3rem;
+    font-family: Poppins;
+    font-weight: 450;
+    font-size: 15px;
+     padding: 5px 10px;
+     border-radius: 10px;
+  }
+  .special-button:hover{
+    cursor: pointer;
+  }
+
+  @media (min-width: 360px) and (max-width: 600px){
+    .notification-pending{
+      display: none;
+    }
+    .special-button{
+      width: 7rem;
+      height: 2rem;
+      font-family: Poppins;
+      font-weight: 450;
+      font-size: 10px;
+       padding: 5px;
+    }
+  }

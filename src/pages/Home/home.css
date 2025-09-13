@@ -1,0 +1,66 @@
+.home-main{
+    /* border: 1px solid black; */
+    min-height: 100rem;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+  
+  .blur-background {
+    filter: blur(10px); /* Apply the blur effect */
+    pointer-events: none; /* Disable interaction with blurred content */
+  }
+  
+  .not-serving {
+    position: fixed; /* Fixed to the viewport */
+    width: 15rem;
+    height: 18rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 999; /* Ensure it's on top of other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for clarity */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    row-gap: 1rem;
+    padding:2rem 2rem;
+    /* border: 1px solid black; */
+    margin-top: 3rem;
+  }
+  .not-serving img{
+    width: 10rem;
+  
+  }
+  .ok-button{
+    width: 5rem;
+    border-radius: 10px;
+    background-color: rgba(215, 114, 34, 1);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .ok-button:hover{
+    cursor: pointer;
+  }
+  
+@media (min-width: 1500px) and (max-width: 2000px) {
+    .home-main {
+        /* border: 1px solid black; */
+        width: 1500px;
+        margin: 0 auto; /* This centers the element horizontally */
+    }
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+  .home-main {
+      /* border: 1px solid black; */
+      width: auto;
+      margin: 0 auto; /* This centers the element horizontally */
+  }
+}
+

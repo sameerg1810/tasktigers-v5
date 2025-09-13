@@ -1,0 +1,247 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.packages-main-container {
+    display: flex;
+}
+
+.save-money-main-con {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+
+}
+
+.sidebar .menu-item {
+    color: white;
+    padding: 10px;
+    /* Add padding for better spacing */
+}
+
+.sidebar .menu-item:hover {
+    background-color: #d67c25;
+}
+
+.sidebar .menu-item.active {
+    background-color: #e8841c;
+}
+
+.savemoney-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-packges{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+.s-m-headding {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+    color: #333333;
+}
+
+.s-m-main-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fef4e8;
+}
+
+.s-m-sub-con {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+}
+
+.offer-s-m-badge {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.plus {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444444;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.percent-off {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e8841c;
+    margin: 10px 0;
+}
+
+.enjoy {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.add-p-button {
+    background-color: #ff9a40;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    /* Added padding for buttons */
+}
+
+.add-p-button:hover {
+    background-color: #e8841c;
+}
+
+.button-secondary {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    /* Added padding for secondary button */
+}
+
+.button-secondary:hover {
+    background-color: #004ba0;
+}
+
+.faq-question {
+    color: #333333;
+}
+
+.faq-answer {
+    color: #666666;
+}
+
+.card-background {
+    background-color: #ffffff;
+}
+
+.card-price {
+    color: #ff9a40;
+}
+
+.card-price-strike {
+    color: #888888;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .packages-main-container {
+        flex-direction: column;
+        /* Stack sidebar and main content */
+    }
+
+    .sidebar {
+        width: 100%;
+        /* Full width for sidebar */
+        padding: 10px 0;
+        /* Add padding for spacing */
+    }
+
+    .save-money-main-con {
+        padding: 10px;
+        /* Adjust padding for main content */
+    }
+
+    .s-m-headding {
+        font-size: 28px;
+        /* Reduce heading size for smaller screens */
+    }
+
+    .s-m-main-con {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 15px;
+        /* Reduced gap for better spacing */
+    }
+
+    .s-m-sub-con {
+        width: 100%;
+        /* Full width for sub-con containers */
+    }
+
+    .add-p-button,
+    .button-secondary {
+        width: 100%;
+        /* Make buttons full width */
+    }
+
+    .faq-question {
+        font-size: 16px;
+        /* Adjust FAQ question size */
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        /* Adjust FAQ answer size */
+    }
+
+    .percent-off {
+        font-size: 18px;
+        /* Adjust discount size */
+    }
+}
+
+/* Packages.css */
+.packages-container {
+}
+
+/* Custom scrollbar styling */
+.packages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.packages-container::-webkit-scrollbar-track {
+    background: #f0e6db;
+    border-radius: 10px;
+}
+
+.packages-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+.MuiCard {
+    padding: 0%;
+}
+.packages-main-con{
+    width: 90%;
+    margin:2rem auto;
+    display: flex;
+   flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+@media (min-width: 360px) and (max-width: 800px) {
+    .packages-container {
+        /* border: 1px solid black; */
+        max-height: none;
+        overflow-y: auto;
+        padding-right: 0px;
+    }
+}
+

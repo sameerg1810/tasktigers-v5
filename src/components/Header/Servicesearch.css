@@ -1,0 +1,265 @@
+.service-search-main-con {
+  position: fixed; /* Fix the container to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width for full screen */
+  height: 100vh; /* Use viewport height for full screen */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center horizontally */
+  row-gap: 2rem;
+  z-index: 1000; /* Ensure it stays above other elements */
+  padding: 1rem 5%; /* Adjust padding for responsiveness */
+  filter: none;
+  color: black;
+  overflow-y: auto; /* Allow scrolling for content overflow */
+  box-sizing: border-box; /* Ensure padding is included in dimensions */
+}
+
+.search-main-con {
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Set a specific maximum height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Styles the scrollbar for Firefox */
+    scrollbar-color: #888 #f0f0f0; /* Customize scrollbar colors for Firefox */
+  }
+  
+  /* Customize the scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+  .search-main-con::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .search-main-con::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background of the scrollbar track */
+  }
+  
+  .search-main-con::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  .search-main-con::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering over the scrollbar */
+  }
+  
+
+
+.service-search-header{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+.service-search-header p{
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #343f52;
+}
+.service-search-cat-con{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+    
+
+}
+.category-item {
+    font-family: Poppins, sans-serif;
+    height: auto;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    border-radius: 0px; /* Optional, for rounded corners */
+    background-color: #fff; /* Optional, to ensure the shadow is visible */
+    padding: 0px; /* Optional, for spacing inside the box */
+    margin-bottom: 1rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    color: #343f52;
+   
+
+
+  }
+  .category-item-name{
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 0px;
+    padding: 5px 0px;
+
+  }
+  .category-item:hover{
+    cursor: pointer;
+  }
+
+  /* Container for subcategories */
+  .subcategory-item {
+    display: flex;
+    flex-wrap: nowrap;  /* Ensure items are on a single line */
+    overflow: hidden;   /* Hide anything that overflows the container */
+  }
+  
+  .subcategorydata {
+    
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
+    padding: 0px;
+    padding: 0.2rem 0.2rem;
+    border-radius: 8px;
+    cursor: pointer; /* Make the subcategory clickable if needed */
+        white-space: nowrap;      /* Prevent text from wrapping to the next line */
+        overflow: hidden;         /* Hide any overflowing text */
+        text-overflow: ellipsis;  
+        max-width: 100%; 
+        padding-bottom: 0.5rem;       
+      
+  }
+  
+
+  /* search service */
+  .search-service{
+    background-color: black;
+  
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    top: 0;
+
+  }
+  .search-service input{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 30rem;
+    height: 2.5rem;
+    font-family: poppins;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 10px 5px;
+    padding: 0px 5px;
+  }
+  .search-service button{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 10rem;
+    height: 2.5rem;
+    font-family: poppins;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 10px 5px;
+    padding: 0px 5px;
+  }
+
+  .search-service-dropdown{
+    position: fixed;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%); /* This will center the div horizontally */
+    width: 70%;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    row-gap: 1rem;
+    /* animation: slideDown 0.5s ease-in-out; */
+    z-index: 1000;
+    padding: 1rem 0rem;
+    filter: none;
+    color: black;
+    /* border: 1px solid black; */
+  }
+  .back-t-c{
+    color: blue;
+    font-family: poppins;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    /* border: 1px solid black; */
+
+
+  }
+  .back-t-c:hover{
+    cursor: pointer;
+  }
+  .service-search-by-letter {
+    /* Enable vertical scrolling but hide scrollbar */
+    max-height: 350px; /* Adjust the height as needed */
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  
+    /* Optional styling */
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  
+  /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+  .service-search-by-letter::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .matched-service-item{
+    border-bottom: 1px solid #ccc;
+
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 450;
+    line-height: 20px;
+  }
+  .matched-service-item:hover{
+    cursor: pointer;
+  }
+
+
+  /* new styling */
+  
+  .new-search-header{
+    border: 1.5px solid white;
+    width: 17rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    column-gap: 0.5rem;
+    font-family: 7oppins;
+    font-size: 18.09px;
+    font-weight: 400;
+    line-height: 15.35px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 0rem 0.5rem;
+  }
+  .new-search-header img{
+    width: 2rem;
+    height: 2rem;
+}  
+ .new-search-header:hover{
+  cursor: pointer;
+}

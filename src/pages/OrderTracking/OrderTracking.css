@@ -1,0 +1,117 @@
+/* Message Popup Overlay */
+.workinfo-main{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.message-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Message Popup Container */
+.message-popup {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Popup Header */
+.message-popup-header {
+    background-color: #075e54;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-popup-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.close-message-popup {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Popup Body */
+.message-popup-body {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+.status-sos{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+.sos-button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    font-family: poppins;
+    line-height: 30px;
+    border: none;
+    border-radius: 10px;
+    
+}
+.sos-button:hover{
+    cursor: pointer;
+}
+.workerinfo-main{
+    /* border: 1px solid black; */
+    margin:3rem 0rem;
+}
+
+@media (min-width: 360px) and (max-width: 600px){
+/* Message Popup Overlay */
+.workinfo-main{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.status-sos{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0rem;
+}
+
+.workerinfo-main{
+    /* border: 1px solid black; */
+    margin:1rem 0rem;
+}
+}

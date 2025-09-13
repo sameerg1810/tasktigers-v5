@@ -1,0 +1,113 @@
+/* CurrentPackage.css */
+
+.current-package-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.package-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.package-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.package-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #f4b400;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.package-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.package-content p strong {
+    color: #333;
+}
+
+.package-status {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Add dynamic color classes */
+.package-status.expired {
+    color: #ff4b5c;
+    /* Red for expired */
+}
+
+.package-status.active {
+    color: #4caf50;
+    /* Green for active */
+}
+
+.no-package {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.no-package h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.no-package p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+
+    .package-card,
+    .no-package {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .package-title {
+        font-size: 1.2em;
+    }
+
+    .package-content p {
+        font-size: 0.9rem;
+    }
+}
+
+.hurray-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hurray-gif {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,186 @@
+.checkout-main-con{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    min-height: 10rem,;
+    /* border: 1px solid black; */
+}
+
+
+.checkout-container {
+    background-color: #ffffff;
+    /* Light green background */
+    padding: 20px;
+    padding-top: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* Adjust the width as necessary */
+    margin: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: 0.015rem solid #d5d5d57b;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -10px inset,
+        rgba(0, 0, 0, 0.3) 0px 10px 20px -10px inset; */
+}
+
+.coupon-section {
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    padding: 0px;
+}
+
+.coupon-code {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.coupon-code input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.apply-coupon-btn {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-summary {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.address-total-info h2{
+   text-align: center;
+   border: 1px solid black;
+}
+
+
+.checkout-total-info h5 {
+    margin-bottom: 0;
+    color: #666
+}
+
+.checkout-total-info p {
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.checkout-total-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirm-payment-btn {
+    padding: 12px 2.5px;
+    background-color: black;
+    /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.confirm-payment-btn:hover {
+    background-color: black;
+}
+
+.errors {
+    color: red;
+    font-style: italic;
+}
+
+.apply-coupon-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.apply-coupon-btn:hover {
+    background-color: #e65c00;
+}
+
+.referral-code-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.referral-code-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.apply-referral-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-referral-btn.applied {
+    background-color: #28a745;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.apply-referral-btn:hover {
+    background-color: #45a049;
+}
+
+.referral-applied {
+    background-color: #e9f7ef;
+    border-color: #c3e6cb;
+}
+
+
+@media (min-width: 360px) and (max-width: 600px){
+
+
+    .checkout-main-con{
+        display: grid;
+        grid-template-columns: 100%;
+        min-height: 10rem,;
+        /* border: 1px solid black; */
+    }
+
+    .confirm-payment-btn {
+        padding: 12px 15px;
+        background-color: black;
+        /* Blue background */
+    }
+
+}
+

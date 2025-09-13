@@ -1,0 +1,188 @@
+
+.carousel-container {
+  margin-bottom: 20px;
+}
+
+.vip-membership {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vip-membership img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.vip-membership p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+/* .ie-popup-banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+} */
+
+.ie-popup-banner-image {
+  width: 100%;
+  height: 400px; /* Set a fixed height to make sure the images appear */
+  object-fit: cover; /* Ensures the image covers the space proportionally */
+  border-radius: 8px;
+}
+
+
+
+.ie-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .ie-popup-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+    max-width: 900px; /* Increased max-width for larger view */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .ie-popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .ie-popup-close-button:hover {
+    color: red;
+    transform: scale(1.2); /* Enlarged for better interaction */
+  }
+  
+  .ie-popup-content {
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 70vh;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f1f1f1;
+    padding-right: 10px; /* To avoid content touching the scrollbar */
+  }
+  
+  .ie-popup-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .ie-popup-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .ie-popup-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+  }
+  
+  .banner-image-container {
+    position: relative;
+    width: 100%; /* Make the container full width */
+  }
+  
+
+  
+  /* Tabs and List Items */
+  .ie-tabs {
+    margin-top: 20px;
+  }
+  
+  .ie-tab-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ie-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .ie-list-item {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .ie-list-item:hover {
+    transform: translateX(5px);
+    background-color: #f1f1f1; /* Add a slight background change on hover */
+  }
+  
+  .item-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .item-text {
+    font-size: 1rem;
+  }
+  
+  /* Adjustments for Mobile View */
+  @media (max-width: 600px) {
+    .ie-popup-container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .ie-tabs {
+      margin-top: 20px;
+    }
+  
+    .ie-tab-content {
+      margin-top: 10px;
+      padding: 15px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .ie-list-item {
+      padding: 6px;
+    }
+  
+    .item-icon {
+      font-size: 1rem;
+    }
+  
+    .item-text {
+      font-size: 0.9rem;
+    }
+  }
+  

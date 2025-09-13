@@ -1,0 +1,120 @@
+.coupon-main-con {
+    /* border: 1px solid black; */
+    width: 20rem;
+    min-height: 20rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+}
+
+.coupon-image-title{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.coupon-image{
+    /* border: 1px solid black; */
+    width: 6rem;
+    height: 4rem;
+    border-radius: 10px;
+}
+.coupon-image img{
+    width: 100%;
+    height: 100%;
+}
+.title-style{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: left;
+}
+.c-v-sub-title{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.5px;
+    text-align: center;    
+    margin: 0px;
+    padding: 15px;
+}
+.c-v-description{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;    
+    margin: 0px;
+    padding: 15px;
+}
+.apply-copy{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.coupon-code-name {
+    /* border: 1px solid black; */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center !important;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    width: 6rem;
+}
+.apply-copy button{
+     width: 8rem;
+     height: 2rem;
+     font-family: Montserrat;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 19.5px;
+     text-align: center !important;
+}
+.apply-copy button:hover{
+    cursor: pointer;
+}
+.apply-copy p{
+    /* border: 1px solid black; */
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center !important;
+}
+.apply-copy p:hover{
+    cursor: pointer;
+}
+.apply-button{
+    width: 6rem;
+    margin: 0rem auto;
+    height: 2.5rem;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    background-color:#FFA226 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center !important;
+    color: white;
+    
+}
+.apply-button:hover{
+    cursor: pointer;
+}

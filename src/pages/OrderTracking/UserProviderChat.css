@@ -1,0 +1,172 @@
+.chat-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 600px;
+    background-color: #ffe5b4;
+    /* Light tiger orange */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow for tiger vibe */
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    border: 2px solid #ff8c00;
+    /* Tiger orange border */
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ff8c00;
+    /* Vibrant tiger orange */
+    color: #000;
+    /* Black text for tiger contrast */
+    border-bottom: 2px solid #d35400;
+    /* Dark orange for tiger stripes effect */
+}
+
+.chat-header-content {
+    display: flex;
+    align-items: center;
+}
+
+.chat-header-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid #d35400;
+    /* Dark orange border */
+}
+
+.chat-header-name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    /* Black for tiger stripe contrast */
+}
+
+.chat-header-phone {
+    font-size: 0.85rem;
+    color: #fff;
+    /* White for better readability */
+}
+
+.chat-close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff5e6;
+    /* Subtle tiger theme */
+}
+
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.sent-message {
+    justify-content: flex-end;
+}
+
+.received-message {
+    justify-content: flex-start;
+}
+
+.message-bubble {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: #ffcc80;
+    /* Light tiger orange */
+    border: 1px solid #d35400;
+    /* Dark orange for tiger stripe contrast */
+}
+
+.sent-message .message-bubble {
+    background-color: #ffd280;
+    /* Slightly lighter tiger orange */
+    border-top-right-radius: 0;
+}
+
+.received-message .message-bubble {
+    background-color: #fff;
+    /* White for received messages */
+    border-top-left-radius: 0;
+    border: 1px solid #ff8c00;
+    /* Tiger orange border */
+}
+
+.message-timestamp {
+    font-size: 10px;
+    color: #d35400;
+    /* Dark orange */
+    text-align: right;
+    margin-top: 5px;
+}
+
+.message-status-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #ffe5b4;
+    /* Light tiger orange */
+    border-top: 2px solid #ff8c00;
+    /* Vibrant tiger stripe border */
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #d35400;
+    /* Dark orange border */
+    font-size: 1rem;
+}
+
+.chat-send-icon {
+    width: 50px;
+    /* Adjust size */
+    height: 40px;
+    object-fit: contain;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.chat-send-icon:hover {
+    transform: scale(1.1);
+    /* Add a hover effect */
+}
+
+.chat-send-icon.disabled {
+    pointer-events: none;
+    /* Prevent interaction when disabled */
+    transform: none;
+    /* Remove scaling */
+}
+
+
+
+.no-messages {
+    text-align: center;
+    color: #d35400;
+    /* Dark orange for tiger theme */
+    margin-top: 20px;
+}

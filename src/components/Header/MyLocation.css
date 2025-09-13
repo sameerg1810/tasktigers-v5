@@ -1,0 +1,153 @@
+/* Base Styles */
+.mob-loc-location-container {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 0;
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/*pushed user-tasktigers-fe*/
+
+/* Loading Overlay */
+.mob-loc-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Container */
+.mob-loc-search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.mob-loc-search-container:focus-within {
+    box-shadow: 0 0 8px 2px rgba(255, 165, 0, 0.5);
+}
+
+/* Back Button Styling */
+.mob-loc-clear-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.mob-loc-clear-button:hover {
+    color: #000;
+}
+
+/* Search Box Styling */
+.mob-loc-search-box {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background: none;
+}
+
+.mob-loc-search-box::placeholder {
+    color: #888;
+}
+
+/* Current Location Button */
+.mob-loc-current-location-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.mob-loc-current-location-button:hover {
+    color: #ff6600;
+}
+
+/* Suggestions List */
+.mob-loc-suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 8px 8px;
+}
+
+.mob-loc-suggestions-list li {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.mob-loc-suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Current Address Section */
+.mob-loc-current-address-section {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mob-loc-current-address-display {
+    font-size: 0.75rem;
+    color: #333;
+    padding: 10px;
+    max-width: 90%;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* Powered By Branding */
+.mob-loc-powered-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    margin-top: 2rem;
+}
+
+.mob-loc-task-tigers-logo {
+    width: 60px;
+    height: auto;
+    margin-top: 2.5px;
+}

@@ -1,0 +1,30 @@
+/* NoInternet.css */
+
+.no-internet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.no-internet img {
+    width: 200px;
+    /* Adjust size as needed */
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.no-internet h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.no-internet p {
+    font-size: 1.1rem;
+    color: #666;
+}

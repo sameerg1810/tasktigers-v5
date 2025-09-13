@@ -1,0 +1,431 @@
+.main-footer {
+    /* border: 1px solid black; */
+    min-height: 13rem;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 2rem 3rem;
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0rem 3rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 1rem 1rem;
+    padding-right: 3rem;
+}
+
+.r-a-p-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    /* border: 1px solid black; */
+}
+
+.r-a-p-image {
+    width: 1rem;
+    height: auto;
+    padding-top: 0.2rem;
+}
+
+.r-a-p {
+    font-family: Poppins;
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 600;
+    line-height: 14px;
+    text-align: left;
+}
+
+.t-logo {
+    width: 20rem;
+    height: 4.5rem;
+}
+.t-logo img{
+    width: 100%;
+    height: 100%;
+}
+.t-logo img:hover{
+   cursor: pointer;
+}
+
+.t-inputs{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 1rem;
+}
+.input {
+    width: 17rem;
+    height: 2.5rem;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: white;
+    margin: 1.5rem auto;
+}
+.t-button {
+    width: 10rem;
+    height: 2.5rem;
+    background-color:
+    rgba(249, 155, 35, 1);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+
+}
+/* main-footer */
+.bottom-footer{
+    display: grid;
+    grid-template-columns: 65% 23%;
+    justify-content: space-between;
+
+}
+
+.first-footer {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    justify-content: space-evenly;
+    align-items: top;
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+li {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.36px;
+    text-align: left;
+    list-style: none;
+}
+
+
+.last-footer {
+    padding: 0rem;
+    /* border: 1px solid black; */
+    
+}
+
+.follow-us {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+
+
+.f-bottom-footer li{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.36px;
+    text-align: left;
+    color: rgba(65, 65, 65, 1);
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+
+.s-m-icons {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 1rem;
+}
+.s-m-i img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.play{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play-apple p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+    padding: 16px 0px;
+    margin: 0px;
+
+}
+
+.p-a-store {
+    display: flex;
+    justify-content: left;
+    column-gap: 1rem;
+}
+
+
+.locations{
+    display: flex;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 1rem 0rem;
+}
+.locations p{
+    margin: 5px;
+    padding: 5px;
+}
+.locations p:hover{
+    cursor: pointer;
+    
+}
+
+
+.seemore:hover{
+    cursor: pointer;
+}
+.first-footer li:hover{
+    cursor: pointer;
+}
+.t-inputs{
+    border: 1px solid black;
+    
+}
+
+
+
+
+/* mobile responsive */
+@media (min-width: 360px) and (max-width: 810px) {
+    .main-footer {
+        border: 1px solid black;
+        min-height: 13rem;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 1rem 1rem;
+        color: white;
+        border-radius: 0px 0px 20px 20px;
+        margin: 0rem 0rem;
+        display: grid;
+        grid-template-columns:100%;
+    }
+    
+    .top-footer{
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid white; */
+        padding: 1rem 0rem;
+        padding-right: 0rem;
+    }
+    
+    .r-a-p-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+        /* border: 1px solid black; */
+    }
+    
+    .r-a-p-image {
+        width: 1rem;
+        height: auto;
+        padding-top: 0.2rem;
+    }
+    
+    .r-a-p {
+        font-family: Poppins;
+        font-size: clamp(15px, 2vw, 20px);
+        font-weight: 600;
+        line-height: 14px;
+        text-align: left;
+    }
+    
+    .t-logo {
+        width: 18rem;
+        height: 4.5rem;
+    }
+    .t-logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .t-logo img:hover{
+       cursor: pointer;
+    }
+    
+    .t-inputs{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        column-gap: 0.5rem;
+    }
+    .input {
+        width: 10rem;
+       
+    }
+    .t-button {
+        width: 7rem;
+        height: 2.5rem;
+    
+    }
+    /* main-footer */
+    .bottom-footer{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        /* padding: 0rem 3rem; */
+    
+    }
+    
+    .first-footer {
+        display: grid;
+        grid-template-columns: 50% 50%; /* Two equal columns */
+        grid-template-rows: auto auto; /* Allow rows to adapt to content */
+        justify-content: center;
+        align-items: start; /* Align items to the top of their grid cells */
+        /* border: 1px solid white; */
+        padding: 1rem 2rem;
+        row-gap: 1rem; /* Add space between rows */
+    }
+    
+    /* Style for the children divs */
+    .first-footer > div:nth-child(3) {
+        grid-column: 1 / -1; /* Make the third div span both columns */
+    }
+    
+    
+    
+    .first-footer P{
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 19.36px;
+        text-align: left;
+       
+    }
+    
+    
+    
+    li {
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 25.36px;
+        text-align: left;
+        list-style: none;
+    }
+    
+    
+    .last-footer {
+        padding: 0rem 2rem;
+        /* border: 1px solid black; */
+        
+    }
+    .play{
+        display: none;
+    }
+    .payment{
+        display: none;
+    }
+    
+
+    
+
+}
+
+@media (min-width: 1500px) {
+    .main-footer {
+        /* border: 1px solid black; */
+        max-width: 1500px;
+        margin: 0px auto;
+    }
+}
+
+.responsive-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+
+
+  .left-footer{
+        /* border: 1px solid white; */
+  }
+  .bottom-left-footer{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    align-items: top;
+  }
+  .footer-head{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .bottom-left-footer li:hover{
+    cursor: pointer;
+  }
+    .right-footer{
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        padding: 0rem 1.5rem;
+    }
+.registerap{
+    padding:1rem 0.5rem;
+    /* border: 1px solid white; */
+    background-color: #F99B23;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25.36px;
+    text-align: center;
+    list-style: none;
+    border-radius: 10px;
+
+}
+.registerap:hover{
+    cursor: pointer;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+}
+.t-button:hover{
+    cursor: pointer;
+}
+  
+    .playstore-img{
+        display: flex;
+        justify-content: left;
+        column-gap: 1rem;
+    }
+    .playstore-img img{
+        width: 5rem;
+        height: 2rem;
+    }

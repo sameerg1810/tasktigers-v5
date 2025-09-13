@@ -1,0 +1,296 @@
+/* Message Popup Overlay */
+.message-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Message Popup Container */
+.message-popup {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Popup Header */
+.message-popup-header {
+  background-color: #075e54;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-popup-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.close-message-popup {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Popup Body */
+.message-popup-body {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+
+/* Sticky Header */
+.op-sticky-header {
+  position: sticky;
+  width: 89%;
+  top: 0;
+  background-color: white;
+  /* Tiger orange */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  /* Align button to the left */
+}
+
+/* Action Button */
+.op-action-button {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.op-action-button:hover {
+  background-color: #ffffff;
+  color: #f57c00;
+  border: 2px solid #f57c00;
+
+}
+
+/* Optional: Adjust margins if needed */
+
+/* .op-card-details {
+    transition: all 0.3s ease-in-out;
+}
+
+.op-card-details:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+} */
+
+.order-status-bar {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #FFD4AA;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin: 0.5rem auto;
+
+}
+.summary-canel{
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid gray;
+  margin-bottom: 1.5rem;
+}
+.cancel-button{
+  /* border: 1px solid black; */
+  background-color: black;
+
+}
+.orders-otp-display {
+
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 55% 40%;
+
+  justify-content: space-between;
+}
+
+.order-display {
+  border: 1.7px solid #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 20px;
+  /* border: 1px solid gray; */
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add box shadow */
+}
+
+.order-display h3 {
+  font-family: Poppins;
+  font-size: 33.95px;
+  font-weight: 500;
+  line-height: 40.93px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 15px;
+  margin: 0px;
+}
+
+
+.order-details-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+
+}
+
+.order-image {
+  width: 90%;
+  height: 90%;
+}
+
+.order-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.order-name {
+  flex: 50%;
+  /* 50% width for name */
+  margin-right: 10px;
+}
+
+.order-price {
+  flex: 30%;
+  /* 30% width for price */
+}
+
+.order-price p {
+  color: #2e7d32;
+  /* Highlight with green color */
+  font-weight: bold;
+  /* Make the text bold for emphasis */
+}
+
+
+/* Custom styles for confirmation alerts */
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.react-confirm-alert {
+
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff00;
+
+}
+
+.react-confirm-alert h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.react-confirm-alert p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.react-confirm-alert-button-group button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.react-confirm-alert-button-group button:first-of-type {
+  background: #e18426;
+  color: #000000;
+}
+
+.react-confirm-alert-button-group button:last-of-type {
+  background: #000000;
+  color: #fff;
+}
+
+
+
+
+@media (min-width: 360px) and (max-width: 600px) {
+  .op-action-button {
+    font-size: 0.8rem;
+    padding: 6px 6px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+    color: #000000;
+    border: 1px solid #000000;
+  }
+  .order-status-bar {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #FFD4AA;
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    margin: 0.5rem auto;
+  }
+  .status-display{
+    border: 1px solid black;
+    font-family: poppins;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .status-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .orders-otp-display {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+     row-gap: 2rem;
+    justify-content: space-between;
+  }
+  
+}

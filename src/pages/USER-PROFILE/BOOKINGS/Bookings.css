@@ -1,0 +1,248 @@
+
+.bookings-container {
+    padding: 0px;
+    /* background-color: #f5f5f5; */
+    /* Light background for contrast */
+    border-radius: 10px;
+   
+    margin: auto 3rem;
+}
+
+.order-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#bookings-service-name {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #555;
+}
+
+.bookings-title {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for the Tabs */
+.tabs-con {
+    /* background-color: black;  */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  
+  /* Common styles for all tabs */
+  .tab-item {
+    color: gray; /* Default text color */
+    background-color: white; /* Default background */
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  /* Styles for the active tab */
+  .tab-item.Mui-selected {
+    background-color: black; /* Background for the active tab */
+    color: white  !important; /* Text color for the active tab */
+    border-radius: 10px 10px 0px 0px;
+  }
+  .circularprogress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+
+
+.order-card:hover {
+    transform: translateY(-2px);
+    /* Slight elevation effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Align items to the center */
+}
+
+.order-card-header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem;
+    /* Adjusted font size */
+}
+
+.order-card-header h2 {
+    margin: 0;
+    color: #777;
+    /* Slightly lighter color for the time */
+    font-weight: normal;
+}
+
+.icon {
+    width: 24px;
+    /* Adjusted icon size */
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.order-card-body {
+    display: flex;
+    justify-content: space-between;
+    /* Space between details */
+    align-items: center;
+    /* Centered alignment */
+    padding: 8px 0;
+    border: 1px solid  black;
+}
+
+.pricing-details {
+    flex: 1;
+    text-align: left;
+    /* Align text to the left */
+}
+
+.order-card-body p {
+    margin: 4px 0;
+    color: #333;
+    /* Dark color for readability */
+}
+
+.booking-date {
+    text-align: center;
+    /* Center align date and button */
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* Stack date and button vertically */
+    gap: 4px;
+    /* Space between date and button */
+    align-items: center;
+    /* Center-align the content */
+}
+
+#booking-day {
+    font-size: 1.25rem;
+    /* Adjusted font size */
+    font-weight: 450;
+    color: #333;
+    /* Darker color for better contrast */
+}
+
+.view-more-button {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    background-color: #ff9800;
+    /* Orange button for contrast */
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-more-button:hover {
+    background-color: #e68900;
+    /* Slightly darker on hover */
+    transform: scale(1.05);
+    /* Hover effect for better interactivity */
+}
+
+
+@media (max-width: 768px) {
+    .order-cards-container {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .bookings-title {
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        /* Adjusted for mobile */
+    }
+
+    .order-card-header h1 {
+        font-size: 1.25rem;
+        /* Adjusted font size */
+    }
+
+    .order-card-header h2 {
+        font-size: 1rem;
+        /* Adjusted font size */
+    }
+
+    .icon {
+        width: 20px;
+        /* Adjusted icon size for mobile */
+        height: 20px;
+    }
+
+    #booking-day {
+        font-size: 1rem;
+        /* Adjusted for mobile */
+    }
+
+    .view-more-button {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+        /* Reduced size for smaller screens */
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 600px){
+    
+        .bookings-container {
+            padding: 0px;
+            /* background-color: #f5f5f5; */
+            /* Light background for contrast */
+            border-radius: 10px;
+            /* border: 1px solid black; */
+            margin: auto 0rem;
+        }
+
+
+        .tabs-con {
+            /* border:1px solid black;  */
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            overflow-x: auto; 
+           
+          }
+          
+          /* Common styles for all tabs */
+          .tab-item {
+            color: gray; /* Default text color */
+            background-color: white; /* Default background */
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: 500;
+            font-size: 10px;
+            text-align: center;
+          }
+          
+          /* Styles for the active tab */
+          .tab-item.Mui-selected {
+            background-color: black; /* Background for the active tab */
+            color: white  !important; /* Text color for the active tab */
+            border-radius: 10px 10px 0px 0px;
+          }
+}
