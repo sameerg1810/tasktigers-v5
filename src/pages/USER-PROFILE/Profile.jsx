@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./profile.css";
+import "./Profile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
