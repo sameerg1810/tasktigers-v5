@@ -1,5 +1,5 @@
 import React from "react";
-import './MobileProfile.css'
+import "./MobileProfile.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,7 +22,7 @@ const MobileProfile = () => {
     <div className="mobile-profile">
       {/* Mobile Navigation */}
       <ul className="mobile-nav">
-      <li onClick={() => handleNavClick("userprofile")}>
+        <li onClick={() => handleNavClick("userprofile")}>
           Account <FontAwesomeIcon icon={faAngleRight} />
         </li>
         <li onClick={() => handleNavClick("addresses")}>

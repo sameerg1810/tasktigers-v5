@@ -16,8 +16,7 @@ import UserProfile from "./user-profile";
 import Addresses from "./ADDRESSES/addresses";
 import Bookings from "./BOOKINGS/Bookings";
 import Packages from "./PACKAGES/Packages";
-import Coupons from "./COUPONS/Coupons";
-import Notifications from "./NotificationsPage";
+import Coupons from "./COUPONS/coupons";
 import MobileProfile from "./MobileProfile";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
@@ -88,8 +87,7 @@ const Profile = () => {
       case "coupons":
       case "coupon-view":
         return <Coupons />;
-      case "notifications":
-        return <Notifications />;
+
       case "referral":
         return <ReferralCard />;
       default:
