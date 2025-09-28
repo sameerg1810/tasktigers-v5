@@ -4,7 +4,7 @@ import "./Bookings.css";
 import PendingOrders from "./Pendingorders";
 import CompletedOrders from "./Completedorders";
 import CancelledOrders from "./Cancelledorders";
-import OngoingOrders from "./OngoingOrders"; // Import the new OngoingOrders component
+import OngoingOrders from "./Ongoingorders"; // Import the new OngoingOrders component
 import { useAuth } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { useOrderHistory } from "../../../context/OrderHistoryContext";
@@ -87,19 +87,23 @@ const Bookings = () => {
     }
   })();
 
-  useEffect(()=>{
-console.log(ordersData,'orderdata')
-  },[ordersData])
+  useEffect(() => {
+    console.log(ordersData, "orderdata");
+  }, [ordersData]);
 
   return (
     <div className="bookings-container">
       <h1 className="bookings-title">My Bookings</h1>
-      <div >
-        <Tabs className="tabs-con" value={selectedTab} onChange={handleTabChange}>
-          <Tab className="tab-item" value="Pending" label="Pending"/>
-          <Tab  className="tab-item" value="Ongoing" label="Ongoing"/>
-          <Tab  className="tab-item" value="Completed" label="Completed"/>
-          <Tab  className="tab-item" value="Cancelled" label="Cancelled"/>
+      <div>
+        <Tabs
+          className="tabs-con"
+          value={selectedTab}
+          onChange={handleTabChange}
+        >
+          <Tab className="tab-item" value="Pending" label="Pending" />
+          <Tab className="tab-item" value="Ongoing" label="Ongoing" />
+          <Tab className="tab-item" value="Completed" label="Completed" />
+          <Tab className="tab-item" value="Cancelled" label="Cancelled" />
         </Tabs>
       </div>
 
